@@ -1,3 +1,4 @@
+/* Place your angular imports here */
 import { Component } from '@angular/core';
 
 @Component({
@@ -5,6 +6,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-  title = 'george-doudouliakis-portfolio';
-}
+export class AppComponent {}
