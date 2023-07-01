@@ -36,11 +36,11 @@ h1, h2, h3, h4, a {
     color: var(--secondary-color);
 }
 
-p, span, ul {
+p, span, ul, blockquote {
     font-family: RalewayLight
 }
 
-p, span {
+p, span, blockquote {
     color: var(--primary-color);
 }
 
@@ -51,6 +51,11 @@ a {
 
 ul {
     list-style-type: none;
+}
+
+button {
+    border: none;
+    outline: none;
 }
 
 // REUSABLE CLASSES

@@ -1,0 +1,62 @@
+:host {
+    .description, blockquote {
+        margin-bottom: 30px;
+    }
+
+    .intro {
+        margin-bottom: 5px;
+        @media(min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+    
+    h1 {
+        margin-bottom: 40px;
+        @media(min-width: 768px) {
+            font-size: 40px;
+        }
+        @media(min-width: 1280px) {
+            font-size: 50px;
+        }
+    }
+
+    .description {
+        font-size: 20px;
+        @media(min-width: 768px) {
+            font-size: 25px;
+            line-height: 35px;
+        }
+        @media(min-width: 1280px) {
+            font-size: 30px;
+        }
+    }
+
+    .social-media-container {
+        display: flex;
+        button {
+            background: var(--body-color);
+            border: 1px dashed var(--secondary-color);
+            &:last-of-type {
+                margin-left: 20px;
+            }
+            a {
+                display: flex;
+                align-items: center;
+                padding: 10px 15px;
+                span {
+                    font-size: 20px;
+                    margin-left: 10px;
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    blockquote {
+        padding: 15px;
+        border-left: 3px solid var(--secondary-color);
+        @media(min-width: 768px) {
+            font-size: 20px;
+        }
+    }
+}

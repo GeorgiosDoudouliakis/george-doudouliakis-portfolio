@@ -14,6 +14,9 @@
   <nav [ngClass]="{ 'mobile-menu-open': isMobileMenuOpen }">
     <ul>
       <li (click)="isMobileMenuOpen && closeMobileMenu()">
+        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+      </li>
+      <li (click)="isMobileMenuOpen && closeMobileMenu()">
         <a routerLink="about" routerLinkActive="active">About</a>
       </li>
       <li (click)="isMobileMenuOpen && closeMobileMenu()">
