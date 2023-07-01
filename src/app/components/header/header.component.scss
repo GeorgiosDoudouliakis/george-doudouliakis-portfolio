@@ -45,6 +45,7 @@
             left: 0;
             width: 100%;
             height: calc(100% - 90px);
+            background: var(--body-color);
             border-top: 1px solid var(--secondary-color);
             ul > li {
                 font-size: 32px;
