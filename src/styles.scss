@@ -1,1 +1,41 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --body-color: #0E141B;
+    --primary-color: #fff;
+    --secondary-color: #B861FF;
+}
+
+// FONT FACE
+@font-face {
+    font-family: RalewayRegular;
+    src: url("./assets/fonts/Raleway-Regular.ttf");
+}
+
+@font-face {
+    font-family: RalewayLight;
+    src: url("./assets/fonts/Raleway-Light.ttf");
+}
+
+// GLOBAL STYLES
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: RalewayRegular;
+    color: var(--secondary-color);
+}
+
+p, span, ul, a {
+    font-family: RalewayLight
+}
+
+p, span {
+    color: var(--primary-color);
+}
