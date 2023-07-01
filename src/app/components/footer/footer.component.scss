@@ -1,0 +1,13 @@
+:host {
+    footer {
+        padding: 15px 0;
+        border-top: 1px solid var(--secondary-color);
+        @media(min-width: 960px) {
+            padding: 20px 0;
+        }
+
+        p {
+            text-align: center;
+        }
+    }
+}
