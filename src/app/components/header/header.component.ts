@@ -1,6 +1,6 @@
 /* Place your angular imports here */
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 @Component({
@@ -10,13 +10,8 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./header.component.scss'],
   imports: [CommonModule, RouterModule]
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
   public isMobileMenuOpen: boolean = false;
-
-  constructor() { }
-
-  ngOnInit() {
-  }
 
   public toggleMobileMenu(): void {
     this.isMobileMenuOpen = !this.isMobileMenuOpen;
