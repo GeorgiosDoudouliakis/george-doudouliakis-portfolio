@@ -1,0 +1,18 @@
+:host {
+    h1 {
+        margin-bottom: 30px;
+    }
+
+    p {
+        font-size: 18px;
+        &:not(:last-of-type) {
+            margin-bottom: 20px;
+        }
+        @media(min-width: 960px) {
+            font-size: 20px;
+        }
+        @media(min-width: 1440px) {
+            font-size: 22px;
+        }
+    }
+}

@@ -7,6 +7,10 @@ const routes: Routes = [
     path: "",
     pathMatch: "full",
     loadComponent: () => import("./pages/home/home.component").then(({ HomeComponent }) => HomeComponent)
+  },
+  {
+    path: "about",
+    loadComponent: () => import("./pages/about/about.component").then(({ AboutComponent }) => AboutComponent)
   }
 ];
 
