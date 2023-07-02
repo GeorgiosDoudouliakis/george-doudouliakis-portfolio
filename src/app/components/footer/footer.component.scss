@@ -1,13 +1,33 @@
 :host {
     footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         padding: 15px 0;
-        border-top: 1px solid var(--secondary-color);
+        border-top: 1px dashed var(--secondary-color);
         @media(min-width: 960px) {
             padding: 20px 0;
         }
 
+        svg {
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: .4s ease-in-out;
+            &:hover {
+                fill: var(--primary-color);
+            }
+        }
+        
         p {
             text-align: center;
+            a {
+                text-decoration: underline;
+                transition: .4s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    color: var(--secondary-color);
+                }
+            }
         }
     }
 }
