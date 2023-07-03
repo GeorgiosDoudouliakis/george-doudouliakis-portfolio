@@ -25,6 +25,18 @@
     scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--secondary-color);
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     background: var(--body-color);
