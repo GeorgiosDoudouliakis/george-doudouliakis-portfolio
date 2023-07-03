@@ -1,14 +1,14 @@
 :host {
     main {
         padding: 40px 0;
-        min-height: calc(100vh - 204px);
+        min-height: calc(100vh - 184px);
         @media(min-width: 768px) {
             padding: 50px 0;
-            min-height: calc(100vh - 185px);
+            min-height: calc(100vh - 165px);
         }
         @media(min-width: 960px) {
             padding: 60px 0;
-            min-height: calc(100vh - 215px);
+            min-height: calc(100vh - 185px);
         }
     }
 }
