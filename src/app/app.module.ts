@@ -1,6 +1,7 @@
 /* Place your angular imports here */
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 /* Place your module imports here */
 import { AppRoutingModule } from './app-routing.module';
@@ -16,6 +17,7 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HeaderComponent,
     FooterComponent

@@ -2,6 +2,9 @@
 import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 
+/* Place any other imports here */
+import { FADE_IN } from '../../animations/fade-in.animation';
+
 interface Skill {
   name: string;
   image: {
@@ -15,7 +18,11 @@ interface Skill {
   standalone: true,
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss'],
-  imports: [NgFor]
+  imports: [NgFor],
+  animations: [FADE_IN],
+  host: {
+    "[@fadeIn]": "true"
+  }
 })
 export class AboutComponent {
   public skills: Skill[] = [
