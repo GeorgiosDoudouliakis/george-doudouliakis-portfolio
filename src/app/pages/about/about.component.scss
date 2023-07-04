@@ -1,8 +1,4 @@
 :host {
-    h1 {
-        margin-bottom: 40px;
-    }
-
     p {
         font-size: 18px;
         margin-bottom: 20px;
@@ -15,11 +11,6 @@
         @media(min-width: 1440px) {
             font-size: 22px;
         }
-    }
-
-    h2 {
-        font-size: 28px;
-        margin-bottom: 20px;
     }
 
     .skills-container,
@@ -36,7 +27,7 @@
     .flip-card {
         width: 140px;
         height: 140px;
-        margin: 20px 40px 20px 0;
+        margin: 0 40px 20px 0;
         cursor: pointer;
         perspective: 1000px;
     }
