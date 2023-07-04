@@ -61,16 +61,21 @@
             ul {
                 display: flex;
                 flex-direction: row;
-                a {
-                    padding: 10px 20px;
-                    background: linear-gradient(to left, var(--body-color) 50%, var(--secondary-color) 50%) right;
-                    background-size: 250% 100%;
-                    transition: .4s ease-in-out;
-                    &.active {
-                        background: var(--secondary-color);
+                li {
+                    &:not(:last-of-type) {
+                        margin-right: 10px;
                     }
-                    &:hover {
-                        background-position: left;
+                    a {
+                        padding: 10px 20px;
+                        background: linear-gradient(to left, var(--body-color) 50%, var(--secondary-color) 50%) right;
+                        background-size: 250% 100%;
+                        transition: .4s ease-in-out;
+                        &.active {
+                            background: var(--secondary-color);
+                        }
+                        &:hover {
+                            background-position: left;
+                        }
                     }
                 }
             }
