@@ -56,12 +56,12 @@
     .flip-card-back {
         position: absolute;
         justify-content: center;
-        background-color: var(--card-background);
+        background-color: var(--card-background-dark);
         backface-visibility: hidden;
     }
     
     .flip-card-front,
     .flip-card-back > h3 {
-        color: var(--primary-color);
+        color: var(--primary-color-dark);
     }
 }

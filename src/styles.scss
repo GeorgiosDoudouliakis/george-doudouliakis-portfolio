@@ -1,8 +1,14 @@
 :root {
-    --body-color: #0E141B;
-    --primary-color: #fff;
-    --secondary-color: #B861FF;
-    --card-background: #182330;
+    --body-color-light: #FAFAFA;
+    --primary-color-light: #0e0e0e;
+    --secondary-color-light: #8438C2;
+    --card-background-light: rgb(247, 247, 247);
+
+    --body-color-dark: #0E141B;
+    --primary-color-dark: #fff;
+    --secondary-color-dark: #B861FF;
+    --card-background-dark: #182330;
+
     --card-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -34,12 +40,12 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color);
+    background: var(--secondary-color-dark);
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    background: var(--body-color);
+    background: var(--body-color-dark);
     width: 90%;
     max-width: 1140px;
     margin: auto;
@@ -55,7 +61,7 @@ h2 {
 
 h1, h2, h3, h4, a {
     font-family: RalewayRegular;
-    color: var(--secondary-color);
+    color: var(--secondary-color-dark);
 }
 
 p, span, ul, blockquote {
@@ -63,12 +69,12 @@ p, span, ul, blockquote {
 }
 
 p, span, blockquote {
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
 }
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--primary-color-dark);
 }
 
 ul {

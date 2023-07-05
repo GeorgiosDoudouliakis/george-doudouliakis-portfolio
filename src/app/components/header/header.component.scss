@@ -45,8 +45,8 @@
             left: 0;
             width: 100%;
             height: calc(100% - 90px);
-            background: var(--body-color);
-            border-top: 1px solid var(--secondary-color);
+            background: var(--body-color-dark);
+            border-top: 1px solid var(--secondary-color-dark);
             z-index: 1;
             ul > li {
                 font-size: 32px;
@@ -67,11 +67,11 @@
                     }
                     a {
                         padding: 10px 20px;
-                        background: linear-gradient(to left, var(--body-color) 50%, var(--secondary-color) 50%) right;
+                        background: linear-gradient(to left, var(--body-color-dark) 50%, var(--secondary-color-dark) 50%) right;
                         background-size: 250% 100%;
                         transition: .4s ease-in-out;
                         &.active {
-                            background: var(--secondary-color);
+                            background: var(--secondary-color-dark);
                         }
                         &:hover {
                             background-position: left;
