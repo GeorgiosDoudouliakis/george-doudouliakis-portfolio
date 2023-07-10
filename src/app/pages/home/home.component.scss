@@ -9,7 +9,7 @@
             font-size: 20px;
         }
     }
-    
+
     h1 {
         @media(min-width: 768px) {
             font-size: 40px;
@@ -30,29 +30,8 @@
         }
     }
 
-    .social-media-container {
-        display: flex;
-        button {
-            background: var(--body-color-dark);
-            border: 1px dashed var(--secondary-color-dark);
-            transition: .4s ease-in-out;
-            &:last-of-type {
-                margin-left: 20px;
-            }
-            &:hover {
-                border-color: var(--primary-color-dark);
-            }
-            a {
-                display: flex;
-                align-items: center;
-                padding: 10px 15px;
-                span {
-                    font-size: 20px;
-                    margin-left: 10px;
-                    color: var(--primary-color-dark);
-                }
-            }
-        }
+    button:last-of-type {
+      margin-left: 20px;
     }
 
     blockquote {

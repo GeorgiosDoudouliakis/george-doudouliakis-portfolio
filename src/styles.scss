@@ -34,7 +34,7 @@
 ::-webkit-scrollbar {
     width: 10px;
 }
- 
+
 ::-webkit-scrollbar-track {
     background: #fff;
 }
@@ -52,7 +52,7 @@ body {
 }
 
 h1, h2 {
-    margin-bottom: 40px; 
+    margin-bottom: 40px;
 }
 
 h2 {
@@ -82,8 +82,24 @@ ul {
 }
 
 button {
-    border: none;
-    outline: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  color: var(--primary-color-dark);
+  background: var(--body-color-dark);
+  border: 1px dashed var(--secondary-color-dark);
+  transition: .4s ease-in-out;
+  outline: none;
+  cursor: pointer;
+  &:has(> a) {
+    padding: 0;
+    > a {
+      display: inline-block;
+      padding: 10px 15px;
+    }
+  }
+  &:hover {
+    border-color: var(--primary-color-dark);
+  }
 }
 
 // REUSABLE CLASSES
