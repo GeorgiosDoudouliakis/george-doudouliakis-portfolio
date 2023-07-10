@@ -102,6 +102,11 @@ button {
   }
 }
 
+button:focus,
+a:focus {
+  outline: 2px solid var(--primary-color-dark);
+}
+
 // REUSABLE CLASSES
 .img-responsive {
     width: 100%;
