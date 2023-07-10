@@ -14,8 +14,8 @@
     }
 
     .skills-container,
-    .flip-card-front,
-    .flip-card-back {
+    .skill-card-front,
+    .skill-card-back {
       display: flex;
       align-items: center;
     }
@@ -26,7 +26,7 @@
       gap: 20px;
     }
 
-    .flip-card {
+    .skill-card {
       height: 140px;
       width: 47%;
       cursor: pointer;
@@ -39,36 +39,36 @@
       }
     }
 
-    .flip-card-inner,
-    .flip-card-front,
-    .flip-card-back {
+    .skill-card-inner,
+    .skill-card-front,
+    .skill-card-back {
       width: 100%;
       height: 100%;
     }
 
-    .flip-card-inner {
+    .skill-card-inner {
       position: relative;
       transition: transform 0.6s;
       transform-style: preserve-3d;
       box-shadow: var(--card-box-shadow);
     }
 
-    .flip-card:hover
-    .flip-card-inner,
-    .flip-card-back {
+    .skill-card:hover
+    .skill-card-inner,
+    .skill-card-back {
       transform: rotateY(180deg);
     }
 
-    .flip-card-front,
-    .flip-card-back {
+    .skill-card-front,
+    .skill-card-back {
       position: absolute;
       justify-content: center;
       background-color: var(--card-background-dark);
       backface-visibility: hidden;
     }
 
-    .flip-card-front,
-    .flip-card-back > h3 {
+    .skill-card-front,
+    .skill-card-back > h3 {
       color: var(--primary-color-dark);
     }
 }

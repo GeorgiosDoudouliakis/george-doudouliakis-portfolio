@@ -5,13 +5,13 @@
 <h2>MY SKILLS</h2>
 <div class="skills-container">
     <ng-container *ngFor="let skill of skills">
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
+        <div class="skill-card">
+            <div class="skill-card-inner">
+              <div class="skill-card-front">
                 <img [src]="skill.image.path" [alt]="skill.image.alt">
               </div>
-              <div class="flip-card-back">
-                <h3>{{ skill.name }}</h3> 
+              <div class="skill-card-back">
+                <h3>{{ skill.name }}</h3>
               </div>
             </div>
           </div>
