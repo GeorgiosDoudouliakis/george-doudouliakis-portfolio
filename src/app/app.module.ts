@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 /* Place your component imports here */
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
+import { ThemeChangerComponent } from "./components/theme-changer/theme-changer.component";
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -20,6 +21,7 @@ import { FooterComponent } from './components/footer/footer.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     HeaderComponent,
+    ThemeChangerComponent,
     FooterComponent
   ],
   providers: [],

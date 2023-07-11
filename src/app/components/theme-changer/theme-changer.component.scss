@@ -1,1 +1,33 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
 
+  span {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color-dark);
+  }
+
+  .theme-switcher-container {
+    position: relative;
+    width: 60px;
+    height: 25px;
+    background: var(--secondary-color-dark);
+    border-radius: 25px;
+    cursor: pointer;
+    .theme-switcher {
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      content: "";
+      background: var(--primary-color-dark);
+      border-radius: 25px;
+      transition: .4s ease-in-out;
+    }
+    @media(min-width: 960px) {
+      margin-right: 20px;
+    }
+  }
+}
