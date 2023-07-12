@@ -1,5 +1,5 @@
 <div class="line"></div>
-<div class="theme-switcher-container" (click)="changeTheme()">
+<div class="theme-switcher" role="button" tabindex="0" (click)="changeTheme()" (keyup.enter)="changeTheme()">
   <svg *ngIf="theme === themeType.DARK" xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" viewBox="0 0 40 40" version="1.1">
     <g id="surface1">
       <path style="fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke:#B861FF;stroke-opacity:1;stroke-miterlimit:4;" d="M 31.748437 6.478125 C 38.484375 10.36875 42.065625 18.051562 40.720312 25.710937 C 39.370312 33.370312 33.370312 39.370312 25.710937 40.720312 C 18.051562 42.065625 10.36875 38.484375 6.478125 31.748437 " transform="matrix(0.833333,0,0,0.833333,0,0)"/>
