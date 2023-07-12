@@ -35,8 +35,9 @@
     }
 
     blockquote {
-        padding: 15px;
-        border-left: 3px solid var(--secondary-color);
+        padding: 10px 15px;
+        line-height: 25px;
+        border-left: 2px solid var(--secondary-color);
         @media(min-width: 768px) {
             font-size: 20px;
         }
