@@ -22,7 +22,6 @@
         text-align: center;
         a {
             text-decoration: underline;
-            transition: .4s ease-in-out;
             cursor: pointer;
             &:hover {
                 color: var(--secondary-color);

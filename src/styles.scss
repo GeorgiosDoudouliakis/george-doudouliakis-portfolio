@@ -19,6 +19,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    transition: .4s ease-in-out;
 }
 
 ::-webkit-scrollbar {
@@ -39,7 +40,6 @@ body {
     width: 90%;
     max-width: 1140px;
     margin: auto;
-    transition: .4s ease-in-out;
 
     --white-color: #fff;
 
@@ -94,7 +94,6 @@ button {
   color: var(--primary-color);
   background: var(--body-color);
   border: 1px dashed var(--secondary-color);
-  transition: .4s ease-in-out;
   outline: none;
   cursor: pointer;
   &:has(> a) {

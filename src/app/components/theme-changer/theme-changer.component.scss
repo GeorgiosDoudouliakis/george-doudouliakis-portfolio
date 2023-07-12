@@ -1,33 +1,21 @@
 :host {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
+  padding: 20px 0 40px 0;
 
-  .theme-mode {
-    font-size: 18px;
-    font-weight: 600;
-    color: var(--primary-color);
+  .line {
+    width: 100%;
+    height: 1px;
+    background: var(--secondary-color);
+    &:first-of-type {
+      margin-right: 20px;
+    }
+    &:last-of-type {
+      margin-left: 20px;
+    }
   }
 
   .theme-switcher-container {
-    position: relative;
     cursor: pointer;
-    &::after {
-      position: absolute;
-      left: -200px;
-      padding: 10px;
-      opacity: 0;
-      content: "Click to change theme";
-      color: var(--white-color);
-      background: var(--secondary-color);
-      transition: .4s ease-in-out;
-    }
-    &:hover::after {
-      opacity: 1;
-    }
-    @media(min-width: 960px) {
-      margin-right: 20px;
-    }
   }
 }
