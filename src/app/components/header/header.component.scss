@@ -23,6 +23,7 @@
         }
 
         span {
+            font-weight: bold;
             margin-left: 15px;
         }
     }
@@ -99,9 +100,11 @@
                         background-size: 250% 100%;
                         transition: .4s ease-in-out;
                         &.active {
+                            color: var(--white-color);
                             background: var(--secondary-color);
                         }
                         &:hover {
+                            color: var(--white-color);
                             background-position: left;
                         }
                     }
