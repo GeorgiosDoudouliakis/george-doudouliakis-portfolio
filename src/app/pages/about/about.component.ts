@@ -67,20 +67,6 @@ export class AboutComponent {
         path: '/assets/images/skills/sass_logo.png',
         alt: 'SASS logo'
       }
-    },
-    {
-      name: 'Git',
-      image: {
-        path: '/assets/images/skills/git_logo.png',
-        alt: 'Git logo'
-      }
-    },
-    {
-      name: 'GitHub',
-      image: {
-        path: '/assets/images/skills/github_logo.png',
-        alt: 'GitHub logo'
-      }
     }
   ];
 }
