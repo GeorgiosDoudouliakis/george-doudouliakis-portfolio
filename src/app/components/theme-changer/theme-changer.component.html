@@ -1,4 +1,5 @@
-<span>{{ theme | uppercase }} MODE ON</span>
+<span class="theme-mode">{{ theme | uppercase }} MODE ON</span>
 <div class="theme-switcher-container" (click)="changeTheme()">
-  <div class="theme-switcher" [ngStyle]="{ 'left': theme === themeType.DARK ? '35px' : '0' }"></div>
+  <div class="theme-switcher" [ngStyle]="{ 'left': theme === themeType.DARK ? '45px' : '0' }"></div>
+  <span [ngStyle]="{ 'right': theme === themeType.DARK ? '30px' : '10px' }">{{ theme }}</span>
 </div>

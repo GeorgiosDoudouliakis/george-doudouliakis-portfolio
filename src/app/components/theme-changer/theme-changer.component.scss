@@ -4,17 +4,17 @@
   align-items: center;
   padding: 40px 0;
 
-  span {
+  .theme-mode {
     font-size: 18px;
     font-weight: 600;
-    color: var(--primary-color-dark);
+    color: var(--primary-color);
   }
 
   .theme-switcher-container {
     position: relative;
-    width: 60px;
+    width: 70px;
     height: 25px;
-    background: var(--secondary-color-dark);
+    background: var(--secondary-color);
     border-radius: 25px;
     cursor: pointer;
     .theme-switcher {
@@ -22,9 +22,15 @@
       width: 25px;
       height: 25px;
       content: "";
-      background: var(--primary-color-dark);
+      background: var(--primary-color);
       border-radius: 25px;
       transition: .4s ease-in-out;
+    }
+    span {
+      font-size: 14px;
+      position: absolute;
+      top: 4px;
+      color: var(--primary-color);
     }
     @media(min-width: 960px) {
       margin-right: 20px;

@@ -1,14 +1,4 @@
 :root {
-    --body-color-light: #FAFAFA;
-    --primary-color-light: #0e0e0e;
-    --secondary-color-light: #8438C2;
-    --card-background-light: rgb(247, 247, 247);
-
-    --body-color-dark: #0E141B;
-    --primary-color-dark: #fff;
-    --secondary-color-dark: #B861FF;
-    --card-background-dark: #182330;
-
     --card-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
@@ -40,15 +30,29 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: var(--secondary-color-dark);
+    background: var(--secondary-color);
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    background: var(--body-color-dark);
+    background: var(--body-color);
     width: 90%;
     max-width: 1140px;
     margin: auto;
+
+    &.light-theme {
+      --body-color: #FAFAFA;
+      --primary-color: #0e0e0e;
+      --secondary-color: #8438C2;
+      --card-background: rgb(247, 247, 247);
+    }
+
+    &.dark-theme {
+      --body-color: #0E141B;
+      --primary-color: #fff;
+      --secondary-color: #B861FF;
+      --card-background: #182330;
+    }
 }
 
 h1, h2 {
@@ -61,7 +65,7 @@ h2 {
 
 h1, h2, h3, h4, a {
     font-family: RalewayRegular;
-    color: var(--secondary-color-dark);
+    color: var(--secondary-color);
 }
 
 p, span, ul, blockquote {
@@ -69,12 +73,12 @@ p, span, ul, blockquote {
 }
 
 p, span, blockquote {
-    color: var(--primary-color-dark);
+    color: var(--primary-color);
 }
 
 a {
     text-decoration: none;
-    color: var(--primary-color-dark);
+    color: var(--primary-color);
 }
 
 ul {
@@ -84,9 +88,9 @@ ul {
 button {
   font-size: 20px;
   padding: 10px 15px;
-  color: var(--primary-color-dark);
-  background: var(--body-color-dark);
-  border: 1px dashed var(--secondary-color-dark);
+  color: var(--primary-color);
+  background: var(--body-color);
+  border: 1px dashed var(--secondary-color);
   transition: .4s ease-in-out;
   outline: none;
   cursor: pointer;
@@ -98,13 +102,13 @@ button {
     }
   }
   &:hover {
-    border-color: var(--primary-color-dark);
+    border-color: var(--primary-color);
   }
 }
 
 button:focus-visible,
 a:focus-visible {
-  outline: 2px solid var(--primary-color-dark);
+  outline: 2px solid var(--primary-color);
 }
 
 // REUSABLE CLASSES

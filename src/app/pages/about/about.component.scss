@@ -63,12 +63,12 @@
     .skill-card-back {
       position: absolute;
       justify-content: center;
-      background-color: var(--card-background-dark);
+      background-color: var(--card-background);
       backface-visibility: hidden;
     }
 
     .skill-card-front,
     .skill-card-back > h3 {
-      color: var(--primary-color-dark);
+      color: var(--primary-color);
     }
 }
