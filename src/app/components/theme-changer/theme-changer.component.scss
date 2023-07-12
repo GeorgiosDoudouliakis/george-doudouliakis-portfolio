@@ -12,25 +12,19 @@
 
   .theme-switcher-container {
     position: relative;
-    width: 70px;
-    height: 25px;
-    background: var(--secondary-color);
-    border-radius: 25px;
     cursor: pointer;
-    .theme-switcher {
+    &::after {
       position: absolute;
-      width: 25px;
-      height: 25px;
-      content: "";
-      background: var(--primary-color);
-      border-radius: 25px;
+      left: -200px;
+      padding: 10px;
+      opacity: 0;
+      content: "Click to change theme";
+      color: var(--white-color);
+      background: var(--secondary-color);
       transition: .4s ease-in-out;
     }
-    span {
-      font-size: 14px;
-      position: absolute;
-      top: 4px;
-      color: var(--white-color);
+    &:hover::after {
+      opacity: 1;
     }
     @media(min-width: 960px) {
       margin-right: 20px;
