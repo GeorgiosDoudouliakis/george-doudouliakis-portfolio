@@ -13,7 +13,7 @@ export class ThemeService {
       if(window.matchMedia("(prefers-color-scheme: dark)").matches) {
         this.setTheme(ThemeType.DARK);
         return;
-      };
+      }
 
       this.setTheme(ThemeType.LIGHT);
     } else {
