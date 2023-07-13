@@ -141,3 +141,8 @@ a:focus-visible {
     object-fit: cover;
     object-position: center;
 }
+
+.card {
+  background: var(--card-background);
+  box-shadow: var(--card-box-shadow);
+}

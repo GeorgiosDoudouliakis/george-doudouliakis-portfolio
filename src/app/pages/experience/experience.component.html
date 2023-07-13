@@ -2,7 +2,7 @@
 <section>
   <article *ngFor="let experience of experiences">
     <span class="duration">{{ experience.period.from }} - {{ experience.period.to }}</span>
-    <section class="experience-card">
+    <section class="card experience-card">
       <h2>{{ experience.jobTitle | uppercase }}</h2>
       <a [href]="experience.company.url" target="_blank" rel="noreferrer">@{{ experience.company.name }}</a>
       <ul>
