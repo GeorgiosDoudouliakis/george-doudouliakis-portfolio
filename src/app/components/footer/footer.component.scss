@@ -5,12 +5,11 @@
     align-items: center;
     padding: 15px 0;
     border-top: 1px dashed var(--secondary-color);
-    @media(min-width: 960px) {
-        padding: 20px 0;
-    }
 
     button {
-      font-size: 35px;
+      font-size: 30px;
+      padding: 0;
+      margin-bottom: 10px;
       border: none;
       &:hover {
         color: var(--secondary-color);
