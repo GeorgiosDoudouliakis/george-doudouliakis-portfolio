@@ -94,16 +94,25 @@
                         margin-right: 10px;
                     }
                     a {
+                        position: relative;
                         padding: 10px 20px;
-                        background: linear-gradient(to left, var(--body-color) 50%, var(--secondary-color) 50%) right;
-                        background-size: 250% 100%;
                         &.active {
                             color: var(--white-color);
                             background: var(--secondary-color);
                         }
-                        &:hover {
-                            color: var(--white-color);
-                            background-position: left;
+                        &::after {
+                          position: absolute;
+                          left: 20px;
+                          bottom: 0;
+                          content: "";
+                          width: calc(100% - 40px);
+                          height: 2px;
+                          background: var(--secondary-color);
+                          opacity: 0;
+                        }
+                        &:hover::after {
+                            opacity: 1;
+                            transition: .4s ease-in-out;
                         }
                     }
                 }
