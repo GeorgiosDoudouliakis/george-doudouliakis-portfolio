@@ -96,23 +96,9 @@
                     a {
                         position: relative;
                         padding: 10px 20px;
-                        &.active {
+                        &:hover, &.active {
                             color: var(--white-color);
                             background: var(--secondary-color);
-                        }
-                        &::after {
-                          position: absolute;
-                          left: 20px;
-                          bottom: 0;
-                          content: "";
-                          width: calc(100% - 40px);
-                          height: 2px;
-                          background: var(--secondary-color);
-                          opacity: 0;
-                        }
-                        &:hover::after {
-                            opacity: 1;
-                            transition: .4s ease-in-out;
                         }
                     }
                 }
