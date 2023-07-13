@@ -10,11 +10,11 @@ const routes: Routes = [
   },
   {
     path: "about",
-    loadComponent: () => import("./pages/about/about.component").then(({ AboutComponent }) => AboutComponent)
+    loadComponent: () => import("./pages/about/layout/about.component").then(({ AboutComponent }) => AboutComponent)
   },
   {
     path: "experience",
-    loadComponent: () => import("./pages/experience/experience.component").then(({ ExperienceComponent }) => ExperienceComponent)
+    loadComponent: () => import("./pages/experience/layout/experience.component").then(({ ExperienceComponent }) => ExperienceComponent)
   }
 ];
 
