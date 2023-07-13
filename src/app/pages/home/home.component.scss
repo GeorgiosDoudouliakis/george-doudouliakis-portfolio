@@ -30,8 +30,8 @@
         }
     }
 
-    button:last-of-type {
-      margin-left: 20px;
+    button:not(:first-of-type) {
+      margin-left: 15px;
     }
 
     blockquote {
