@@ -48,6 +48,7 @@ body {
       --primary-color: #0e0e0e;
       --secondary-color: #7141a8;
       --card-background: rgb(255, 255, 255);
+      --btn-after-el-background-color: var(--primary-color);
     }
 
     &.dark-theme {
@@ -55,6 +56,7 @@ body {
       --primary-color: #fff;
       --secondary-color: #B861FF;
       --card-background: #182330;
+      --btn-after-el-background-color: #adadad;
     }
 }
 
@@ -93,7 +95,7 @@ button {
   padding: 10px 15px;
   color: var(--primary-color);
   background: var(--body-color);
-  border: 1px dashed var(--secondary-color);
+  border: 1px solid var(--secondary-color);
   outline: none;
   cursor: pointer;
   &:has(> a) {
@@ -105,6 +107,25 @@ button {
   }
   &:hover {
     border-color: var(--primary-color);
+  }
+}
+
+.btn-after-el-effect {
+  position: relative;
+  &::after {
+    position: absolute;
+    left: 4px;
+    bottom: -4px;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: var(--btn-after-el-background-color);
+    z-index: -1;
+    transition: .4s ease-in-out;
+  }
+  &:hover::after {
+    left: 0;
+    bottom: 0;
   }
 }
 
