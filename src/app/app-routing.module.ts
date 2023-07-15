@@ -20,6 +20,11 @@ const routes: Routes = [
     loadComponent: () => import("./pages/experience/layout/experience.component").then(({ ExperienceComponent }) => ExperienceComponent)
   },
   {
+    path: "projects",
+    title: "Projects | George Doudouliakis - Front End Web Developer",
+    loadComponent: () => import("./pages/projects/layout/projects.component").then(({ ProjectsComponent }) => ProjectsComponent)
+  },
+  {
     path: "**",
     title: "Page Not Found | George Doudouliakis - Front End Web Developer",
     loadComponent: () => import("./pages/page-not-found/page-not-found.component").then(({ PageNotFoundComponent }) => PageNotFoundComponent)
