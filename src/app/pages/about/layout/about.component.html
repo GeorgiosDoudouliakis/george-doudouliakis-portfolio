@@ -2,18 +2,4 @@
 <p>Hello there! My name is George Doudouliakis and i am a Front End Web Developer located in Thessaloniki, GR.</p>
 <p>My enthusiasm for bringing a design into life brought me to the world of Front End Web Development in early 2020. Having started with simple websites and thereafter enhanced my skills in JavaScript, i started learning Angular 2+. At the time speaking, i work as a full-time front end web developer in Thessaloniki.</p>
 <p>I'm passionate about what i do, i love solving problems and learning every day something new or enhance my existing skills. I try to write clean and maintainable code in order to achieve a better coding experience.</p>
-<h2>MY SKILLS</h2>
-<div class="skills-container">
-    <ng-container *ngFor="let skill of skills">
-        <div class="skill-card">
-            <div class="card skill-card-inner">
-              <div class="skill-card-front">
-                <img [src]="skill.image.path" [alt]="skill.image.alt">
-              </div>
-              <div class="skill-card-back">
-                <h3>{{ skill.name }}</h3>
-              </div>
-            </div>
-          </div>
-    </ng-container>
-</div>
+<portfolio-skills></portfolio-skills>
