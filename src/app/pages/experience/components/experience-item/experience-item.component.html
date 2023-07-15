@@ -1,0 +1,10 @@
+<article>
+  <span class="duration">{{ experience.period.from }} - {{ experience.period.to }}</span>
+  <section class="card experience-card">
+    <h2>{{ experience.jobTitle | uppercase }}</h2>
+    <a [href]="experience.company.url" target="_blank" rel="noreferrer">@{{ experience.company.name }}</a>
+    <ul>
+      <li *ngFor="let tech of experience.technologies">{{ tech }}</li>
+    </ul>
+  </section>
+</article>

@@ -1,0 +1,53 @@
+:host {
+  article {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    @media(min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  .duration {
+    padding: 8px 16px;
+    margin-bottom: 32px;
+    color: var(--white-color);
+    background: var(--secondary-color);
+    @media(min-width: 768px) {
+      width: 40%;
+      margin-bottom: 0;
+    }
+  }
+
+  .experience-card {
+    padding: 16px;
+    h2 {
+      font-size: 20px;
+      margin-bottom: 8px;
+    }
+    a {
+      display: block;
+      padding-bottom: 8px;
+      color: var(--primary-color);
+      border-bottom: 1px solid var(--secondary-color);
+      transition: .4s ease-in-out;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    ul {
+      padding-top: 20px;
+      li {
+        color: var(--primary-color);
+        &:not(:last-of-type) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    @media(min-width: 768px) {
+      width: 60%;
+      margin-left: 32px;
+    }
+  }
+}
