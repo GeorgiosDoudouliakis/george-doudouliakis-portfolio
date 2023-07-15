@@ -18,6 +18,11 @@ const routes: Routes = [
     path: "experience",
     title: "Experience | George Doudouliakis - Front End Web Developer",
     loadComponent: () => import("./pages/experience/layout/experience.component").then(({ ExperienceComponent }) => ExperienceComponent)
+  },
+  {
+    path: "**",
+    title: "Page Not Found | George Doudouliakis - Front End Web Developer",
+    loadComponent: () => import("./pages/page-not-found/page-not-found.component").then(({ PageNotFoundComponent }) => PageNotFoundComponent)
   }
 ];
 
