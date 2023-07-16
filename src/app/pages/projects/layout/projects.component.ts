@@ -10,13 +10,18 @@ import { Project } from "../interfaces/project.interface";
 
 /* Place any other imports here */
 import { PROJECTS } from "../mock/projects.mock";
+import { FADE_IN } from "../../../animations/fade-in.animation";
 
 @Component({
   selector: 'portfolio-projects',
   standalone: true,
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
-  imports: [NgFor, ProjectItemComponent]
+  imports: [NgFor, ProjectItemComponent],
+  animations: [FADE_IN],
+  host: {
+    "[@fadeIn]": "true"
+  }
 })
 export class ProjectsComponent {
   public projects: Project[] = PROJECTS;
