@@ -1,0 +1,78 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .5);
+  z-index: 10;
+
+  .project-image-info-container {
+    width: 90%;
+    background: var(--white-color);
+    @media(min-width: 768px) {
+      width: 550px;
+    }
+  }
+
+  .img-container {
+    height: 300px;
+    img {
+      object-position: top center;
+    }
+  }
+
+  .project-info-container {
+    padding: 20px;
+  }
+
+  .name {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #444444;
+  }
+
+  .technologies {
+    font-size: 16px;
+    color: #c1c1c1 ;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e5e5e5;
+  }
+
+  .description {
+    padding-top: 20px;
+    color: #7a7a7a;
+  }
+
+  .links-close-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px 20px 20px;
+  }
+
+  .links-container > button {
+    background: var(--secondary-color);
+    &:first-of-type {
+      margin-right: 10px;
+    }
+    a {
+      color: var(--white-color);
+    }
+  }
+
+  button {
+    font-size: 16px;
+    &.close-button {
+      font-size: 20px;
+      color: #bbbbbb;
+      background: var(--white-color);
+      border: none;
+    }
+  }
+}

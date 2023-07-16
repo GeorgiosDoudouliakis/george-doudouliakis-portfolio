@@ -1,0 +1,17 @@
+<div class="project-image-info-container" @showModal>
+  <div class="img-container">
+    <img [src]="project.imagePath" class="img-responsive" alt="">
+  </div>
+  <div class="project-info-container">
+    <div class="name">{{ project.name }}</div>
+    <div class="technologies">({{ project.technologies.toString() }})</div>
+    <p class="description">{{ project.description }}</p>
+  </div>
+  <div class="links-close-container">
+    <div class="links-container">
+      <button *ngIf="project.links.preview"><a [href]="project.links.preview" target="_blank">Preview</a></button>
+      <button><a [href]="project.links.github" target="_blank">GitHub</a></button>
+    </div>
+    <button class="close-button" (click)="closeModal()">&#10006;</button>
+  </div>
+</div>
