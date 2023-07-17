@@ -1,6 +1,6 @@
 :host {
     .description, blockquote {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .intro {
@@ -11,6 +11,7 @@
     }
 
     h1 {
+        margin-bottom: 30px;
         @media(min-width: 768px) {
             font-size: 40px;
         }
@@ -36,7 +37,6 @@
 
     blockquote {
         padding: 10px 15px;
-        line-height: 25px;
         border-left: 2px solid var(--secondary-color);
         @media(min-width: 768px) {
             font-size: 20px;
