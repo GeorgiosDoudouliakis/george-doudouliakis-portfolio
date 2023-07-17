@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkgeorge_doudouliakis_portfolio=self.webpackChunkgeorge_doudouliakis_portfolio||[]).push([[592],{165:(s,_,e)=>{e.d(_,{T:()=>a});var o=e(340);const a=(0,o.X$)("fadeIn",[(0,o.eR)(":enter",[(0,o.oB)({opacity:0}),(0,o.jt)("1s",(0,o.oB)({opacity:1}))])])}}]);
