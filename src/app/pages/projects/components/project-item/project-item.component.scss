@@ -37,6 +37,11 @@
       }
       button {
         font-size: 15px;
+        color: var(--white-color);
+        background: var(--secondary-color);
+        &:hover {
+          border-color: var(--white-color);
+        }
       }
     }
     &:hover > div {
