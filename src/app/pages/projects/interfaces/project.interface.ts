@@ -5,6 +5,6 @@ export interface Project {
   imagePath: string;
   links: {
     github: string;
-    preview?: string;
+    preview: string;
   };
 }

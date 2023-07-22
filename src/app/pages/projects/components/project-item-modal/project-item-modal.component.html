@@ -9,7 +9,7 @@
   </div>
   <div class="links-close-container">
     <div class="links-container">
-      <button *ngIf="project.links.preview"><a [href]="project.links.preview" target="_blank">Preview</a></button>
+      <button><a [href]="project.links.preview" target="_blank">Preview</a></button>
       <button><a [href]="project.links.github" target="_blank">GitHub</a></button>
     </div>
     <button class="close-button" (click)="closeModal()">&#10006;</button>

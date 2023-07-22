@@ -18,6 +18,7 @@ export const PROJECTS: Project[] = [
     technologies: ["Angular", "html-to-image"],
     imagePath: "assets/images/projects/food_blog.png",
     links: {
+      preview: 'https://georgiosdoudouliakis.github.io/food-blog/',
       github: 'https://github.com/GeorgiosDoudouliakis/food-blog'
     }
   }
