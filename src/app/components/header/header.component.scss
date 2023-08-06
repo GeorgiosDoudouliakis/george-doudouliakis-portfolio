@@ -96,7 +96,12 @@
                     a {
                         position: relative;
                         padding: 10px 20px;
-                        &:hover, &.active {
+                        border-radius: 4px;
+                        &:hover {
+                          background: transparent;
+                          box-shadow: 0 0 8px 2px var(--secondary-color);
+                        }
+                        &.active {
                             color: var(--white-color);
                             background: var(--secondary-color);
                         }
