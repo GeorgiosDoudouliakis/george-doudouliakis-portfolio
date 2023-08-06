@@ -1,5 +1,5 @@
 :host {
-    .description, blockquote {
+    .description {
         margin-bottom: 20px;
     }
 
@@ -37,6 +37,7 @@
 
     blockquote {
         padding: 10px 15px;
+        margin-bottom: 65px;
         border-left: 2px solid var(--secondary-color);
         @media(min-width: 768px) {
             font-size: 20px;
